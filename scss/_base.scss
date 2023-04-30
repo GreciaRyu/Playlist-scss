@@ -1,0 +1,78 @@
+/*COLORES*/
+$primary: rgb(156, 39, 176);
+$secondary: rgb(118, 255, 3);
+$emphasis: rgb(190, 255, 136);
+$body: rgb(244, 217, 249);
+
+
+/*--------GENERAL--------*/
+body {margin: 0%; background-color: rgb(20, 20, 20);
+    h1,h2,h3,h4,h5,h6,p,a,li, label {font-family: 'Roboto';}
+    .fontcolor-emphasis {color: $emphasis}
+
+    header { top:0px; margin: 0px;
+        .navbar {position:sticky; top:0px; margin: 0px;
+            background-color: $primary; width: 100%; height:auto;
+            .navbar-profile {border-radius: 50%; border: 0.1rem solid rgb(20, 20, 20);
+                position: relative; left: 50%; right: 50%; margin:0 0 0 32%;}
+            ul {margin:0% 6rem; display: flex; align-items: center; padding: 0%; flex-wrap: wrap;}
+                li {list-style: none; padding: 0.5rem;}
+                a{text-decoration: none; color: rgb(255, 255, 255);}
+            }
+        section {display: flex; justify-content: center;
+                img {min-width: 20%; height: 100%; width: 100%; display: flex; flex-shrink: 4;}
+            }
+        }
+
+    main {color: $body;
+        
+        section img { height: 10rem; width: 6.6rem; border-radius: 2rem;}
+        aside p em {color: rgb(190, 255, 136);}
+        
+        .main-aside-profile-image {border-radius: 50%; border: 0.1rem solid rgb(20, 20, 20); width: 2rem; height: 2rem;}
+        
+        .asideL ul li,.asideR ul li {list-style: none; padding: 1rem 0.5rem;}
+        .asideL a {text-decoration: none}
+        
+        .Content section {display: flex; justify-content:space-evenly; align-content: center ;}
+
+        .section-header {display: flex; justify-content: space-between; align-items: center; margin: 1rem, 1.5rem;
+                        p { color: $secondary}}
+        section {display: flex; justify-content:space-evenly; align-items: center;
+                img {border-radius: 2rem; padding: 0.5rem; min-width: 20%;
+                    height: 55%; width: 40%; display: flex; flex-shrink: 4;
+                    overflow: clip;}
+                }
+        
+        .MainCard {margin: 0.5rem 0;padding: 0.5rem; min-width: 40%; width: 90%; height: auto;
+                border-radius: 1rem; background-color: $primary;
+
+                img {border-radius: 1rem; float: left; margin: 0.3rem; width: 50px; height:60px;}
+            }
+
+        .CardTittle {color: $secondary; display: flex; align-items: center;}
+        .CardContent p {margin:0}
+        .CardFooter {color: $secondary;display: flex; justify-content: space-between; padding: 0 1rem;}
+
+        .profile-cards {display: flex; justify-content:space-evenly; align-items: center; margin: 0 0.5rem;}
+        .simple-card {padding: 0.5rem; margin: 0.5rem ;  width: 40%; height: auto;
+            border-radius: 1rem; background-color:$primary;display:inline-block;
+        h3,h5 {text-align: center; padding: 0; margin: 0.2em;}
+        }
+     }
+
+    footer {background-color: rgb(0, 0, 0); margin-bottom:0%; width: 100%;
+            p {color:$secondary;}
+            ul {display:flex; justify-content: flex-end;
+                li{list-style: none;
+                    a{text-decoration: none;}
+                }
+            }
+            .footer-text {display: flex; justify-content: space-between;} 
+    }
+}
+
+
+a:active {color: #32CB00;text-shadow: 0 0 0.5rem #32CB00;}
+a:hover {color: #32CB00;}
+a:visited {color: #248f00;}

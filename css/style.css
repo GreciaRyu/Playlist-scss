@@ -1,0 +1,558 @@
+/*COLORES*/
+/*--------GENERAL--------*/
+body {
+  margin: 0%;
+  background-color: rgb(20, 20, 20);
+}
+body h1, body h2, body h3, body h4, body h5, body h6, body p, body a, body li, body label {
+  font-family: "Roboto";
+}
+body .fontcolor-emphasis {
+  color: rgb(190, 255, 136);
+}
+body header {
+  top: 0px;
+  margin: 0px;
+}
+body header .navbar {
+  position: sticky;
+  top: 0px;
+  margin: 0px;
+  background-color: rgb(156, 39, 176);
+  width: 100%;
+  height: auto;
+}
+body header .navbar .navbar-profile {
+  border-radius: 50%;
+  border: 0.1rem solid rgb(20, 20, 20);
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 0 0 0 32%;
+}
+body header .navbar ul {
+  margin: 0% 6rem;
+  display: flex;
+  align-items: center;
+  padding: 0%;
+  flex-wrap: wrap;
+}
+body header .navbar li {
+  list-style: none;
+  padding: 0.5rem;
+}
+body header .navbar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+body header section {
+  display: flex;
+  justify-content: center;
+}
+body header section img {
+  min-width: 20%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-shrink: 4;
+}
+body main {
+  color: rgb(244, 217, 249);
+}
+body main section img {
+  height: 10rem;
+  width: 6.6rem;
+  border-radius: 2rem;
+}
+body main aside p em {
+  color: rgb(190, 255, 136);
+}
+body main .main-aside-profile-image {
+  border-radius: 50%;
+  border: 0.1rem solid rgb(20, 20, 20);
+  width: 2rem;
+  height: 2rem;
+}
+body main .asideL ul li, body main .asideR ul li {
+  list-style: none;
+  padding: 1rem 0.5rem;
+}
+body main .asideL a {
+  text-decoration: none;
+}
+body main .Content section {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+body main .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem, 1.5rem;
+}
+body main .section-header p {
+  color: rgb(118, 255, 3);
+}
+body main section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body main section img {
+  border-radius: 2rem;
+  padding: 0.5rem;
+  min-width: 20%;
+  height: 55%;
+  width: 40%;
+  display: flex;
+  flex-shrink: 4;
+  overflow: clip;
+}
+body main .MainCard {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  min-width: 40%;
+  width: 90%;
+  height: auto;
+  border-radius: 1rem;
+  background-color: rgb(156, 39, 176);
+}
+body main .MainCard img {
+  border-radius: 1rem;
+  float: left;
+  margin: 0.3rem;
+  width: 50px;
+  height: 60px;
+}
+body main .CardTittle {
+  color: rgb(118, 255, 3);
+  display: flex;
+  align-items: center;
+}
+body main .CardContent p {
+  margin: 0;
+}
+body main .CardFooter {
+  color: rgb(118, 255, 3);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+body main .profile-cards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+body main .simple-card {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 40%;
+  height: auto;
+  border-radius: 1rem;
+  background-color: rgb(156, 39, 176);
+  display: inline-block;
+}
+body main .simple-card h3, body main .simple-card h5 {
+  text-align: center;
+  padding: 0;
+  margin: 0.2em;
+}
+body footer {
+  background-color: rgb(0, 0, 0);
+  margin-bottom: 0%;
+  width: 100%;
+}
+body footer p {
+  color: rgb(118, 255, 3);
+}
+body footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+body footer ul li {
+  list-style: none;
+}
+body footer ul li a {
+  text-decoration: none;
+}
+body footer .footer-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+a:active {
+  color: #32CB00;
+  text-shadow: 0 0 0.5rem #32CB00;
+}
+
+a:hover {
+  color: #32CB00;
+}
+
+a:visited {
+  color: #248f00;
+}
+
+form input[type=text] {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.8rem 0;
+  box-sizing: border-box;
+  border-radius: 2rem;
+  border: 0;
+  background-color: #222222;
+  color: rgb(190, 255, 136);
+  outline: none;
+}
+form input[type=text]:focus {
+  border: 0.1rem solid rgb(118, 255, 3);
+  color: rgb(118, 255, 3);
+}
+form input[type=text]:hover {
+  box-shadow: 0 0 0.5rem rgb(118, 255, 3);
+}
+form input[type=number], form input[type=date] {
+  width: 30%;
+  padding: 0.8rem;
+  margin: 0.8rem 0;
+  box-sizing: border-box;
+  border-radius: 2rem;
+  border: 0;
+  background-color: #222222;
+  color: rgb(190, 255, 136);
+  outline: none;
+}
+form input[type=number]:focus, form input[type=date]:focus {
+  border: 0.1rem solid rgb(118, 255, 3);
+  color: rgb(118, 255, 3);
+}
+form input[type=number]:hover, form input[type=date]:hover {
+  box-shadow: 0 0 0.5rem rgb(118, 255, 3);
+}
+form input[type=radio]:after {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: rgb(244, 217, 249);
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 0.2rem solid white;
+}
+form input[type=radio]:checked:after {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #32CB00;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 0.2rem solid white;
+}
+form textarea {
+  min-width: 60%;
+  height: 30%;
+  width: 100%;
+  height: 8rem;
+  padding: 0.8rem;
+  margin: 0.8rem 0;
+  box-sizing: border-box;
+  border-radius: 2rem;
+  border: 0;
+  background-color: #222222;
+  color: rgb(190, 255, 136);
+  resize: none;
+}
+form textarea:focus {
+  border: 0.1rem solid rgb(118, 255, 3);
+  color: rgb(118, 255, 3);
+}
+form textarea:hover {
+  box-shadow: 0 0 0.5rem rgb(118, 255, 3);
+}
+form .form-buttom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+form input[type=button], form input[type=submit], form input[type=reset] {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.5rem;
+  padding: 0.8rem;
+  margin: 0.8rem 0;
+  box-sizing: border-box;
+  border-radius: 2rem;
+  border: 0;
+  background-color: rgb(118, 255, 3);
+  color: #000;
+  resize: none;
+  text-shadow: 2px 2px 6px #222222;
+  font-weight: bold;
+}
+form input[type=button]:focus, form input[type=submit]:focus, form input[type=reset]:focus {
+  border: 0.1rem solid rgb(118, 255, 3);
+}
+form input[type=button]:hover, form input[type=submit]:hover, form input[type=reset]:hover {
+  box-shadow: 0 0 0.5rem rgb(118, 255, 3);
+}
+form input[type=button]:active, form input[type=submit]:active, form input[type=reset]:active {
+  color: #000;
+  background-color: #32CB00;
+  box-shadow: 0 0 0.5rem #32CB00;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+/*----------DESKTOP---------*/
+@media (min-width: 992px) {
+  .basegrid {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+  header {
+    grid-area: "header";
+  }
+  main {
+    grid-area: "main";
+  }
+  footer {
+    grid-area: "footer";
+  }
+  .main--grid {
+    display: grid;
+    grid-template-areas: "asideL content asideR";
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto;
+    column-gap: 3%;
+  }
+  .asideL {
+    grid-area: asideL;
+  }
+  .Content {
+    grid-area: content;
+  }
+  .asideR {
+    grid-area: asideR;
+  }
+  main {
+    margin: 0% 6rem 1.5rem 6rem;
+  }
+  .asideL, .asideR {
+    margin-top: 7rem;
+  }
+  .asideL div {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.6rem 0.5rem;
+    align-items: center;
+  }
+  .asideL div p {
+    margin: 0.1rem;
+  }
+  .asideR ul {
+    padding: 0rem;
+  }
+  footer ul {
+    margin: 0% 6rem;
+  }
+  .footer-text {
+    margin: 0% 18rem 0% 6rem;
+  }
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+/*----------TABLET--------*/
+@media (min-width: 769px) and (max-width: 991px) {
+  .basegrid {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+  header {
+    grid-area: "header";
+  }
+  main {
+    grid-area: "main";
+  }
+  footer {
+    grid-area: footer;
+  }
+  .main--grid {
+    display: grid;
+    grid-template-areas: "asideL content asideR";
+    grid-template-columns: 30% 70% 0%;
+    grid-template-rows: auto;
+    column-gap: 3%;
+  }
+  .asideL {
+    grid-area: asideL;
+  }
+  .Content {
+    grid-area: content;
+  }
+  .asideR {
+    grid-area: asideR;
+  }
+  main {
+    margin: 1rem 4rem;
+  }
+  .asideR {
+    display: none;
+  }
+  .asideL {
+    margin-top: 5rem;
+  }
+  .asideL img {
+    float: left;
+    margin: 0.2rem;
+  }
+  .asideL div {
+    display: inline-block;
+    margin: 1rem 0.5rem;
+    width: auto;
+  }
+  .asideL div p {
+    margin: 0.1rem;
+  }
+  footer ul {
+    margin: 0% 6rem;
+  }
+  .footer-text {
+    margin: 0% 18rem 0% 6rem;
+  }
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+/*----------MOBILE---------*/
+@media (max-width: 768px) {
+  .basegrid {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+  header {
+    grid-area: "header";
+  }
+  main {
+    grid-area: "main";
+  }
+  footer {
+    grid-area: footer;
+  }
+  .main--grid {
+    display: grid;
+    grid-template-areas: "content" "asideL" "asideR";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+  .asideL {
+    grid-area: asideL;
+  }
+  .Content {
+    grid-area: content;
+  }
+  .asideR {
+    grid-area: asideR;
+  }
+  main {
+    margin: 1rem 2rem;
+  }
+  .asideR {
+    display: none;
+  }
+  .asideL {
+    margin-top: 1rem;
+  }
+  .asideL img {
+    float: left;
+    margin: 0.2rem;
+  }
+  .asideL div {
+    display: inline-block;
+    margin: 1rem 0.5rem;
+    width: auto;
+  }
+  .asideL div p {
+    margin: 0.1rem;
+  }
+  footer ul {
+    margin: 0% 6rem;
+  }
+  .footer-text {
+    margin: 0% 18rem 0% 6rem;
+  }
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+/*----------MOBILE XS---------*/
+@media (max-width: 576px) {
+  .basegrid {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+  header {
+    grid-area: "header";
+  }
+  main {
+    grid-area: "main";
+  }
+  footer {
+    grid-area: footer;
+  }
+  .main--grid {
+    display: grid;
+    grid-template-areas: "content" "asideL" "asideR";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+  .asideL {
+    grid-area: asideL;
+  }
+  .Content {
+    grid-area: content;
+  }
+  .asideR {
+    grid-area: asideR;
+  }
+  main {
+    margin: 1rem;
+  }
+  .asideR {
+    display: none;
+  }
+  .asideL {
+    margin-top: 1rem;
+  }
+  .asideL img {
+    float: left;
+    margin: 0.2rem;
+  }
+  .asideL div {
+    display: inline-block;
+    margin: 1rem 0.5rem;
+    width: auto;
+  }
+  .asideL div p {
+    margin: 0.1rem;
+  }
+  .footer-allcontent {
+    padding: 0.5rem;
+  }
+  footer ul {
+    margin: 0% 2rem;
+  }
+  .footer-text {
+    margin: 0% 8rem 0% 2rem;
+  }
+  .footer-text p {
+    margin: 0.1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
